@@ -1,92 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="shortcut icon" href="assets/ico/favicon.ico">
-
-<title>My Homepage</title>
-
-<!-- Bootstrap core CSS -->
+<title>Rajesh's Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="css/cover.css" rel="stylesheet">
-
-<!-- Just for debugging purposes. Don't actually copy this line! -->
-<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
 
-	<div class="site-wrapper">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
 
-		<div class="site-wrapper-inner">
-
-			<div class="cover-container">
-			  <div class="header-container">
-				<div class="masthead clearfix center-block">
-					<div class="inner">
-						<h3 class="masthead-brand">Rajesh Golani</h3>
-						<ul class="nav masthead-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Resume</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="navbar-brand">
+				<a href="#" class="navbar-brand-a">Rajesh Golani</a><br /> <span
+					class="navbar-brand-text">SDE Intern @ Amazon.com</span>
 			</div>
-				<div class="inner cover">
-					<h1 class="cover-heading">Cover your page.</h1>
-					<p class="lead">Cover is a one-page template for building
-						simple and beautiful home pages. Download, edit the text, and add
-						your own fullscreen background photo to make it your own.</p>
-					<p class="lead">
-						<a href="#" class="btn btn-lg btn-default">Learn more</a>
-					</p>
-				</div>
 
+			<button class="navbar-toggle" data-toggle="collapse"
+				data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
 
-				<div class="inner cover">
-					<h1 class="cover-heading">Cover your page.</h1>
-					<p class="lead">Cover is a one-page template for building
-						simple and beautiful home pages. Download, edit the text, and add
-						your own fullscreen background photo to make it your own.</p>
-					<p class="lead">
-						<a href="#" class="btn btn-lg btn-default">Learn more</a>
-					</p>
-				</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
 
-				<div class="mastfoot">
-					<div class="inner">
-						<p>
-							Cover template for <a href="http://getbootstrap.com">Bootstrap</a>,
-							by <a href="https://twitter.com/mdo">@mdo</a>.
-						</p>
-					</div>
-				</div>
+				<ul class="nav navbar-nav navbar-right nav-pills nav-stacked">
+
+					<li class="active"><a href="#home" class="MenuItem">About
+							Me</a></li>
+					<li><a href="#projects" class="MenuItem">Projects</a></li>
+					<li><a href="#publications" class="MenuItem">Publications</a></li>
+					<li><a href="#achieve" class="MenuItem">Achievements</a></li>
+					<li><a href="docs/Resume.pdf" target="_new" class="MenuItem">Resume</a></li>
+					<li><a href="#contact" class="MenuItem">Contact</a></li>
+				</ul>
 
 			</div>
 
 		</div>
+	</div>
+
+
+	<a name="home"></a>
+	<div class="container">
+
+		<div class="jumbotron">
+			<div class="row">
+
+				<div class="col-md-8">
+
+					<h4>Hi!</h4>
+					<p style="margin-bottom: 40px; font-size: 17px">
+						I am Computer Science Masters student at <a
+							href="http://www.cs.sunysb.edu/" target="_new">Stony Brook
+							University</a> where I am lucky enough to be advised by <a
+							href="http://www.cs.stonybrook.edu/~phillipa/index.php">Phillipa
+							Gill</a>. Currently, I am interning at <a
+							href="http://www.amazon.com" target="_new">Amazon.com</a> in
+						Seattle, Washington. <br /> Prior to this, I have worked as
+						Assistant Systems Engineer at <a href="http://www.tcs.com"
+							target="_new">TATA Consultancy Services</a> for 2 years.
+					</p>
+
+
+					<a href="http://www.linkedin.com/in/rajeshgolani" class="pull-left"
+						style="color: black; font-size: 20px; margin-right: 10px;"><img
+						src="images/linkedin.png" width="48" /></a> <a
+						href="mailto:rajesh.golani2@gmail.com" target="_top"><img
+						src="images/gmail.png" /></a>
+				</div>
+
+				<div class="col-md-4 hidden-xs">
+					<img class="profile-image" src="images/pic_rajesh.jpg">
+				</div>
+			</div>
+		</div>
 
 	</div>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
+	<a name="projects"></a>
+	<div class="container">
+		<div class="page-header page-header1">
+			<h2>Projects</h2>
+		</div>
+		<div>
+			<div class="row">
+
+				<div class="col-md-4">
+
+					<h3>
+						<a href=" https://github.com/rajesh5310/SBUnix" target="_new">SBUnix</a>
+					</h3>
+					<p>Developed a preemptive multitasking kernel for x86-64
+						architecture with Virtual Memory Management, Page-fault Handling,
+						Syscalls, Shell and VFS (PCI bus, AHCI sata device controller
+						interfacing and File System calls) support.</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3>
+						<a href="docs/aims14_poster.pdf" target="_new">Mobile Traffic
+							Differentiation</a>
+					</h3>
+					<p style="word-wrap: break-word;">Built an Android app for
+						detecting Traffic differentiation by ISPs on Cellular data
+						networks using Traffic Record and Replay. First network traces for
+						particular App like Netflix, DropBox etc. are recorded. Then these
+						traces are replayed over Open channel and encrypted VPN tunnel to
+						identify differentiation.</p>
+
+				</div>
+
+				<div class="col-md-4">
+
+					<h3>
+						<a href="docs/Wireless_Report.pdf" target="_new">Wi-Fi Traffic
+							Analysis </a>
+					</h3>
+					<p>Devised various performance metrics to understand the nature
+						and usage-patterns of IEEE 802.11n Wi-Fi Protocol by analyzing
+						real time network traffic from EAP authenticated Hosts/Access
+						Points and formulated throughput comparison factors(like
+						ChatterBox pairs).</p>
+
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-4">
+					<h3>
+						<a
+							href="https://bitbucket.org/rajesh_golani/cse508_nftables_porting"
+							target="_new">Porting Nftables on Android</a>
+					</h3>
+					<p>Ported Nftables which were introduced in linux 3.13 to
+						Goldfish 3.10. Nftables are successor of iptables for packet
+						filtering.</p>
+
+				</div>
+
+				<div class="col-md-4">
+
+					<h3>
+						<a href="https://github.com/rajesh5310/CSE534_FCN" target="_new">
+							Click Modular Router</a>
+					</h3>
+					<p>Used a network emulation testbed (emulab), and the click
+						modular router for the performance evaluation of samplenetwork
+						topologies under TCP and UDP.</p>
+				</div>
+
+				<div class="col-md-4">
+
+					<h3>
+						<a href="https://github.com/rajesh5310/CSE534_FCN" target="_new">
+							NDN Simulations on NS3</a>
+					</h3>
+					<p>Used and modified the ndnSIM module from the NS-3 network
+						simulator to study the performance of a sample NDNarchitecture
+						under different caching properties and traffic conditions.</p>
+				</div>
+
+
+
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+
+					<h3>
+						<a> Code Generator Tool</a>
+					</h3>
+					<p>Code Generator Tool (jQuery UI, jsoup, Spring) Implemented
+						tool for auto-generation of HTML based web-pages using jQuery for
+						front-end, Spring framework and jsoup for business logic.
+						Developed drag-drop interface resulted in significant reduction in
+						code-development time.</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3>
+						<a> HTML5 Persistent Local Storage Application</a>
+					</h3>
+					<p>Constructed a proof-of-concept with subsequent
+						implementation for persistent data storage client application
+						using HTML5 local storage and indexDB which helped to overcome
+						connection-loss issues.</p>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a name="publications"></a>
+	<div class="container">
+		<div class="page-header  page-header1">
+			<h2>Publications</h2>
+		</div>
+		<div>
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<h3>
+						<a href="docs/aims14_poster.pdf">Identifying Traffic
+							Differentiation on Cellular Data Networks <br /> <span
+							style="font-size: 12px; color: black">Presented at AIMS14</span>
+						</a>
+					</h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a name="achieve"></a>
+	<div class="container">
+		<div class="page-header  page-header1">
+			<h2>Achievements</h2>
+		</div>
+		<div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="list-group">
+						<li class="list-group-item"
+							style="border: none; color: #0088cc; font-size: 20px">Winner
+							of Amazon Global Intern Hackathon 2014</li>
+						<li class="list-group-item"
+							style="border: none; color: #0088cc; font-size: 20px">College
+							Topper in Undergrad</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<a name="contact"></a>
+	<div class="container">
+		<div class="page-header page-header1">
+			<h2>Contact</h2>
+		</div>
+		<div>
+			<div class="row">
+
+				<div class="col-md-7">
+
+					<h3>
+						<a href="#">Address</a>
+					</h3>
+					<p>
+						1504 Aurora Ave N #409 <br /> Seattle, WA 98109
+					</p>
+					<h3>
+						<a href="#">Email</a>
+					</h3>
+					<p>
+						rajesh.golani2@gmail.com <br /> rgolani@cs.stonybrook.edu <br />
+				</div>
+
+				<div class="col-md-5 hidden-xs ">
+					<iframe width="425" height="350" frameborder="0" scrolling="no"
+						marginheight="0" marginwidth="0"
+						src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1504+Aurora+Ave+N+%23409&amp;aq=&amp;sll=47.626185,-122.333887&amp;sspn=0.081448,0.207882&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1504+Aurora+Ave+N+%23409,+Seattle,+Washington+98109&amp;ll=47.632726,-122.343136&amp;spn=0.01018,0.025985&amp;z=14&amp;output=embed"></iframe>
+					<br /> <small><a
+						href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1504+Aurora+Ave+N+%23409&amp;aq=&amp;sll=47.626185,-122.333887&amp;sspn=0.081448,0.207882&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1504+Aurora+Ave+N+%23409,+Seattle,+Washington+98109&amp;ll=47.632726,-122.343136&amp;spn=0.01018,0.025985&amp;z=14"
+						style="color: #0000FF; text-align: left">View Larger Map</a></small>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 
+	<div class="navbar-default navbar-fixed-bottom"
+		style="padding: 5px; border-top: 1px solid gray">
+		<div class="container">
+			<p class="navbar-text pull-left">Site Built By Rajesh Golani</p>
+			<a href="http://www.linkedin.com/in/rajeshgolani" class="pull-right"><img
+				src="images/linkedin.png" width="48" /></a>
+		</div>
+
+	</div> -->
+
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="assets/js/docs.min.js"></script>
+
+	<script type="text/javascript">
+		$(".MenuItem").click(function() {
+			$(".nav li").removeClass("active");
+			$(this).parent().addClass("active");
+		});
+	</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9903511; 
+var sc_invisible=1; 
+var sc_security="e31f83ee"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9903511/0/e31f83ee/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
 </body>
 </html>

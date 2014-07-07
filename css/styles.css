@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	font-family: verdana, Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: verdana, Calibri, "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
 	font-size: 14px;
 	color: #333333;
 	background-color: #ffffff;
@@ -20,8 +21,22 @@ h1,h2,h3,h4,h5,h6 {
 	color: #333333;
 }
 
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
 .page-header {
-	border-bottom: 1pxpx solid #eeeeee;
+	border-bottom: 1pxpx solid black;
+}
+
+.page-header1 {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid black;
 }
 
 hr {
@@ -185,11 +200,12 @@ select,textarea,input[type="text"],input[type="password"],input[type="datetime"]
 	color: #3a87ad;
 }
 
-.navbar .container { height: 90px; }
+.navbar .container {
+	height: 90px;
+}
 
 .navbar-inner {
-	background-image : -moz-linear-gradient( top, #000000,
-	#000000);
+	background-image: -moz-linear-gradient(top, #000000, #000000);
 	background-image: -ms-linear-gradient(top, #000000, #000000);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000000),
 		to(#000000));
@@ -205,42 +221,46 @@ select,textarea,input[type="text"],input[type="password"],input[type="datetime"]
 	padding: 20px 20px 10px;
 	color: #ffffff;
 }
-.navbar .navbar-brand .navbar-brand-a{
+
+.navbar .navbar-brand .navbar-brand-a {
 	font-size: 45px;
 	color: white;
 }
-.navbar .navbar-brand .navbar-brand-a:hover{
+
+.navbar .navbar-brand .navbar-brand-a:hover {
 	text-decoration: none;
 }
-.navbar .navbar-brand .navbar-brand-text{
-	float:right;
+
+.navbar .navbar-brand .navbar-brand-text {
+	float: right;
 	font-size: 15px;
 	color: #B0E2FF;
 }
+
 .navbar .divider-vertical {
 	height: 51px;
 	background-color: #ffffff;
 	border-right: 1px solid #c6c6c6;
 }
 
-.navbar .nav>li{
+.navbar .nav>li {
 	padding-bottom: 5px;
-	background-color: #222222;	
+	background-color: #222222;
 }
 
-.navbar .nav>li.active{
+.navbar .nav>li.active {
 	border-bottom: white 3px solid;
 	font-weight: bold;
 	cursor: none;
 }
 
-.navbar .nav>li:hover{
+.navbar .nav>li:hover {
 	border-bottom: grey 3px solid;
 }
 
 .navbar .nav>li>a {
 	padding: 30px 10px 11px;
-	font-size: 15px;
+	font-size: 17px;
 	color: #ffffff;
 }
 
@@ -249,7 +269,7 @@ select,textarea,input[type="text"],input[type="password"],input[type="datetime"]
 	
 }
 
-.profile-image{
+.profile-image {
 	width: 300px;
 	padding: 2px;
 	border: 1px solid black;
@@ -278,6 +298,24 @@ select,textarea,input[type="text"],input[type="password"],input[type="datetime"]
 	background-color: #3a87ad;
 }
 
-.jumbotron{
+.jumbotron {
 	box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.7);
+}
+
+//medium+ screen sizes
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+//small screen sizes
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
 }
